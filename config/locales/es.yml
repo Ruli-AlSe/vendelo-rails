@@ -34,6 +34,12 @@ es:
       title: 'Añadir producto'
     index:
       title: 'Productos: '
+      all: 'Todos'
+      min_price: 'Precio minimo'
+      max_price: 'Precio maximo'
+      expensive: 'Mas caros'
+      cheapest: 'Mas baratos'
+      newest: 'Nuevos'
     create:
       created: 'Producto creado exitosamente'
     update:
