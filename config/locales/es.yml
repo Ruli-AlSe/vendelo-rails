@@ -22,6 +22,11 @@ es:
               blank: 'No puede estar vacío'
   common:
     confirm: '¿Estás seguro?'
+    back: 'Volver'
+  shared:
+    header:
+      add: 'Añadir producto'
+      categories: 'Ver categorias'
   products:
     edit:
       title: 'Editar producto'
@@ -35,3 +40,20 @@ es:
       updated: 'Producto actualizado exitosamente'
     destroy:
       destroyed: 'Producto eliminado exitosamente'
+  categories:
+    category:
+      edit: 'Editar categoria'
+      delete: 'Eliminar'
+    index:
+      title: 'Categorias: '
+      new: 'Nueva categoria'
+    edit:
+      title: 'Editar categoria'
+    new:
+      title: 'Nueva categoria'
+    create:
+      created: 'Categoria creada exitosamente'
+    update:
+      updated: 'Categoria actualizada exitosamente'
+    destroy:
+      destroyed: 'Categoria eliminada exitosamente'
