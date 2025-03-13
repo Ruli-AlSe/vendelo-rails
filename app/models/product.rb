@@ -1,7 +1,4 @@
 class Product < ApplicationRecord
-  has_one_attached :photo
-  belongs_to :category
-
   ORDER_BY = {
     "newest" => "created_at DESC",
     "expensive" => "price DESC",
@@ -11,4 +8,7 @@ class Product < ApplicationRecord
   validates :title, presence: true
   validates :description, presence: true
   validates :price, presence: true
+
+  has_one_attached :photo
+  belongs_to :category
 end
