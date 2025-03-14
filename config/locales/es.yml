@@ -5,11 +5,17 @@ es:
     models:
       product: 'Producto'
     attributes:
+      category:
+        name: 'Nombre de la categoria'
       product:
         title: 'Titulo'
         description: 'Descripción'
         price: 'Precio'
         photo: 'Imagen'
+      user:
+        email: 'Email'
+        username: 'Username'
+        password: 'Password'
     errors:
       models:
         product:
@@ -22,6 +28,13 @@ es:
               blank: 'No puede estar vacío'
             photo:
               blank: 'No puede estar vacío'
+        user:
+          attributes:
+            email:
+              invalid: 'Invalid email'
+            username:
+              blank: 'Can´t be blank'
+              invalid: 'Invalid username'
   common:
     confirm: '¿Estás seguro?'
     back: 'Volver'
@@ -29,6 +42,10 @@ es:
     header:
       add: 'Añadir producto'
       categories: 'Ver categorias'
+  authentication:
+    users:
+      create:
+        created: 'Tu cuenta ha sido creada exitosamente'
   products:
     edit:
       title: 'Editar producto'
