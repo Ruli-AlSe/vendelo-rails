@@ -16,6 +16,9 @@ class ProductsController < ApplicationController
   end
 
   def create
+    # This one way to assing products to the current logged user
+    # @product = Current.user.products.new(product_params)
+    # See other way in product.rb
     @product = Product.new(product_params)
 
     if @product.save
@@ -53,6 +56,6 @@ class ProductsController < ApplicationController
   end
 
   def product_params_index
-    params.permit(:category_id, :min_price, :max_price, :order_by)
+    params.permit(:category_id, :min_price, :max_price, :order_by, :page)
   end
 end

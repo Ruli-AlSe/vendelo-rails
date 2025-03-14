@@ -4,6 +4,8 @@ en:
   activerecord:
     models:
       product: 'Product'
+      user: 'User'
+      category: 'Category'
     attributes:
       category:
         name: 'Category name'
@@ -16,25 +18,6 @@ en:
         email: 'Email'
         username: 'Username'
         password: 'Password'
-    errors:
-      models:
-        product:
-          attributes:
-            title:
-              blank: 'Can´t be blank'
-            description:
-              blank: 'Can´t be blank'
-            price:
-              blank: 'Can´t be blank'
-            photo:
-              blank: 'Can´t be blank'
-        user:
-          attributes:
-            email:
-              invalid: 'Invalid email'
-            username:
-              blank: 'Can´t be blank'
-              invalid: 'Invalid username'
   common:
     confirm: 'are you sure?'
     back: 'Back'
@@ -43,6 +26,9 @@ en:
     header:
       add: 'Add product'
       categories: 'See categories'
+      login: 'Login'
+      register: 'Register'
+      logout: 'Logout'
   authentication:
     users:
       create:
@@ -51,6 +37,8 @@ en:
       create:
         created: 'Welcome!!'
         failed: 'Invalid login'
+      destroy:
+        destroyed: 'Session ended'
   products:
     edit:
       title: 'Edit product'

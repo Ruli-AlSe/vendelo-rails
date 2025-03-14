@@ -11,4 +11,6 @@ class Product < ApplicationRecord
 
   has_one_attached :photo
   belongs_to :category
+  # This is the other way to assing products to the current logged user
+  belongs_to :user, default: -> { Current.user }
 end
