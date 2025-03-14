@@ -46,6 +46,10 @@ es:
     users:
       create:
         created: 'Tu cuenta ha sido creada exitosamente'
+    sessions:
+      create:
+        created: '¡Bienvenido!'
+        failed: 'Login invalido'
   products:
     edit:
       title: 'Editar producto'
