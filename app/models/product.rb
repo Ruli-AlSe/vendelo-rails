@@ -13,4 +13,8 @@ class Product < ApplicationRecord
   belongs_to :category
   # This is the other way to assing products to the current logged user
   belongs_to :user, default: -> { Current.user }
+
+  def owner?
+    user_id == Current.user.id
+  end
 end
