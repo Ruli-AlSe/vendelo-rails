@@ -27,6 +27,7 @@ en:
   shared:
     header:
       add: 'Add product'
+      favorites: 'My favorites'
       categories: 'See categories'
       login: 'Login'
       register: 'Register'
@@ -81,3 +82,6 @@ en:
       updated: 'Category updated successfully'
     destroy:
       destroyed: 'Category deleted successfully'
+  favorites:
+    index:
+      title: 'My favorites'

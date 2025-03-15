@@ -27,6 +27,7 @@ es:
   shared:
     header:
       add: 'Añadir producto'
+      favorites: 'Mis favoritos'
       categories: 'Ver categorias'
       login: 'Acceso'
       register: 'Registro'
@@ -81,3 +82,6 @@ es:
       updated: 'Categoria actualizada exitosamente'
     destroy:
       destroyed: 'Categoria eliminada exitosamente'
+  favorites:
+    index:
+      title: 'Mis favoritos'
