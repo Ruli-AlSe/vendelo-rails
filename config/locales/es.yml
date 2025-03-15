@@ -23,6 +23,7 @@ es:
     back: 'Volver'
     not_logged_in: 'Tienes que iniciar sesion o crear una cuenta'
     not_authorized: 'No tienes permiso para realizar esta acción'
+    not_found: 'No se ha encontrado'
   shared:
     header:
       add: 'Añadir producto'
@@ -59,6 +60,10 @@ es:
       updated: 'Producto actualizado exitosamente'
     destroy:
       destroyed: 'Producto eliminado exitosamente'
+    show:
+      edit: 'Editar producto'
+      delete: 'Eliminar producto'
+      view_more_products: 'Ver mas productos de %{username}'
   categories:
     category:
       edit: 'Editar categoria'
