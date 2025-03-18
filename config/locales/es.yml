@@ -43,6 +43,10 @@ es:
       destroy:
         destroyed: 'Has cerrado sesion'
   products:
+    form:
+      submit: 'Crear producto'
+      category: 'Categoria'
+      category_placeholder: 'Selecciona categoria'
     edit:
       title: 'Editar producto'
     new:

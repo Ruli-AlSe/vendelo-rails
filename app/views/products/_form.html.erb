@@ -1,32 +1,26 @@
 <%= form_with model: @product do |form| %>
   <% @product.errors.full_messages.each do |error| %>
-    <p><%= error %></p>
+    <p class="text-red-500"><%= error %></p>
   <% end %>
-
-  <div>
+  <div class="my-5 flex flex-col gap-2">
     <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, class: "p-2 rounded-2xl border-gray-200 mb-4 w-full border border-gray-500" %>
   </div>
-
-  <div>
+  <div class="my-5 flex flex-col gap-2">
     <%= form.label :description %>
-    <%= form.text_area :description %>
+    <%= form.text_area :description, class: "p-2 rounded-2xl mb-4 w-full border border-gray-500", rows: 5 %>
   </div>
-
-  <div>
+  <div class="my-5 flex flex-col gap-2">
     <%= form.label :price %>
-    <%= form.number_field :price %>
+    <%= form.number_field :price, class: "p-2 rounded-2xl border-gray-200 mb-4 w-full border border-gray-500" %>
   </div>
-
-  <div>
+  <div class="my-5 flex flex-col gap-2">
     <%= form.label :category %>
-    <%= form.collection_select :category_id, Category.all, :id, :name %>
+    <%= form.collection_select :category_id, Category.all.order(name: :asc), :id, :name, { prompt: t(".category_placeholder") }, { class: "rounded-2xl border-gray-200 mb-4 w-full text-gray-500"} %>
   </div>
-
-  <div>
+  <div class="rounded-2xl border-gray-200 mb-4 w-full border-[1px] p-2 text-gray-500">
     <%= form.label :photo %>
     <%= form.file_field :photo %>
   </div>
-
-  <%= form.submit %>
+  <%= form.submit t('.submit'), class: "px-4 py-2 font-semibold text-sm bg-cyan-500 text-white rounded-2xl cursor-pointer shadow-sm" %>
 <% end %>

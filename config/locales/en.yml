@@ -43,6 +43,8 @@ en:
       destroy:
         destroyed: 'Session ended'
   products:
+    form:
+      submit: 'Create product'
     edit:
       title: 'Edit product'
     new:

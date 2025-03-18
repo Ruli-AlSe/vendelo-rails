@@ -10,5 +10,8 @@ application.register('hello', HelloController);
 import MenuController from './menu_controller';
 application.register('menu', MenuController);
 
+import ModalController from './modal_controller';
+application.register('modal', ModalController);
+
 import { Alert } from 'tailwindcss-stimulus-components';
 application.register('alert', Alert);
