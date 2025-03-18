@@ -1,9 +1,9 @@
 class Product < ApplicationRecord
   include Favoritable
   ORDER_BY = {
-    "newest" => "created_at DESC",
-    "expensive" => "price DESC",
-    "cheapest" => "price ASC"
+    newest: "created_at DESC",
+    expensive: "price DESC",
+    cheapest: "price ASC"
   }
 
   validates :title, presence: true

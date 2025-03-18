@@ -52,7 +52,7 @@ class FindProducts
   end
 
   def sort(scoped, order_by)
-    order_by_query = Product::ORDER_BY.fetch(order_by, Product::ORDER_BY[:newest])
+    order_by_query = Product::ORDER_BY.fetch(order_by&.to_sym, Product::ORDER_BY[:newest])
     scoped.order(order_by_query)
   end
 end
