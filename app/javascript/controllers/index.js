@@ -13,8 +13,5 @@ application.register('menu', MenuController);
 import ModalController from './modal_controller';
 application.register('modal', ModalController);
 
-import WebsocketProductController from './websocket_product_controller';
-application.register('websocket-product', WebsocketProductController);
-
 import { Alert } from 'tailwindcss-stimulus-components';
 application.register('alert', Alert);

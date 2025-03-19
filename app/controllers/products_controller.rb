@@ -36,7 +36,7 @@ class ProductsController < ApplicationController
     authorize! product
 
     if product.update(product_params)
-      notify_all_users
+      product.broadcast
       redirect_to products_path, notice: t(".updated")
     else
       render :edit, status: :unprocessable_entity
@@ -64,12 +64,12 @@ class ProductsController < ApplicationController
     params.permit(:category_id, :min_price, :max_price, :order_by, :page, :favorites, :user_id)
   end
 
-  def notify_all_users
-    ActionCable.server.broadcast(
-      "product_#{product.id}",
-      {
-        action: "updated"
-      }
-    )
-  end
+  # def notify_all_users
+  #   ActionCable.server.broadcast(
+  #     "product_#{product.id}",
+  #     {
+  #       action: "updated"
+  #     }
+  #   )
+  # end
 end
