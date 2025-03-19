@@ -65,7 +65,7 @@ group :test do
   gem "webmock"
 end
 
-gem "tailwindcss-rails", "~> 4.2"
+gem "tailwindcss-ruby", "~> 4.0", ">= 4.0.14"
 
 gem "view_component", "~> 3.21"
 
