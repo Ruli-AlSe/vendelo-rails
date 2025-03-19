@@ -335,7 +335,7 @@ DEPENDENCIES
   selenium-webdriver
   sidekiq (~> 7.3)
   sprockets-rails
-  sqlite3 (>= 1.4)
+  sqlite3 (~> 2.6)
   stimulus-rails
   tailwindcss-rails (~> 4.2)
   turbo-rails
