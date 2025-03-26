@@ -67,6 +67,6 @@ end
 
 gem "tailwindcss-ruby", "~> 4.0", ">= 4.0.14"
 
-gem "view_component", "~> 3.21"
+gem "view_component", "~> 3.22"
 
 gem "sidekiq", "~> 7.3"
